@@ -57,6 +57,7 @@ h3 {
 .projects > p {
   top: 40%;
   position: relative;
+  font-size: 3vw;
 }
 /* Contact Section */
 .contact {
