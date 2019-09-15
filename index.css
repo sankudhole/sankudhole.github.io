@@ -1,0 +1,106 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+/* Starting Section of the page */
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: aqua;
+}
+.main > div {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+/* Header tags */
+h1 {
+  font-size: 6vw;
+}
+h2 {
+  font-size: 4vw;
+}
+h3 {
+  font-size: 4vw;
+  padding: 10px;
+}
+/* Who am I? Section of the page */
+.iam {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #e4e72a;
+  margin: 0%;
+  padding: 0%;
+}
+.iam > h3 {
+  padding: 5vh;
+}
+.iam > div {
+  text-align: justify;
+}
+.iam > div > p {
+  margin: 5vw;
+}
+/* Projects Section */
+.projects {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: tomato;
+}
+.projects > h3 {
+  padding-top: 5vh;
+}
+.projects > p {
+  top: 40%;
+  position: relative;
+}
+/* Contact Section */
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: bisque;
+}
+.contact-text {
+  text-align: center;
+}
+.contact > h3 {
+  padding: 5vh;
+}
+.social {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+/* Responsive Section using mobile first approach */
+@media screen and (min-width: 600px) {
+  .iam > div > p {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    font-size: 4vw;
+  }
+  .social {
+    display: inline-block;
+    margin-left: 40px;
+  }
+  .social-parent {
+    top: 30%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 800px) {
+  .iam > div > p {
+    font-size: 2vw;
+  }
+}
